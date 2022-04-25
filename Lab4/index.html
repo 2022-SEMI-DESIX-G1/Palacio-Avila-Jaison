@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4</title>
+    <style>
+      #resultado {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: rgba(9, 32, 205, 0.89);
+        color: aliceblue;
+        min-width: 80px;
+        height: 100px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        transition: 0.3s;
+        margin: 10px;
+        padding:5px;
+      }
+
+      p:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>laboratorio 4</h1>
+    <form id="formulario">
+      <input id="numero" type="number" placeholder="Introduca la palabra" />
+      <input type="submit" value="Calcular" />
+    </form>
+    <div id="resultado"></div>
+  </body>
+
+  <script>
+    var arrayList = [];
+
+    var deleteCard = (index) => {
+      //Ingresamos un mensaje
+      var mensaje = confirm(
+        `¿Deseas eliminar el elemento ${index} de la lista?`
+      );
+      //Verificamos si el usuario acepto el mensaje
+      if (mensaje) {
+        arrayList.splice(index, 1);
+        renderCards(arrayList);
+        alert("¡Gracias por confirmar!");
+      }
+      //Verificamos si el usuario denegó el mensaje
+      else {
+        alert("¡Haz Cancelado la!");
+      }
+    };
+
+    const renderCards = (render) => {
+      const resultado = document.getElementById("resultado");
+      resultado.innerHTML = ``;
+      arrayList = render;
+      for (let i = 0; i < render.length; i++) {
+        resultado.innerHTML += `<p name=${
+          i + 1
+        } onclick="deleteCard(${i})">${render[i]}</p>`;
+      }
+    };
+
+    window.onload = () => {
+      const form = document.getElementById("formulario");
+      const numero = document.getElementById("numero");
+      const resultado = document.getElementById("resultado");
+
+      form.addEventListener("submit", function (event) {
+        try {
+          event.preventDefault();
+
+          function GenerateFibonacci(number) {
+            resultado.innerHTML = ``;
+
+            var fibonacci = [];
+            fibonacci[0] = 0;
+            fibonacci[1] = 1;
+
+            if (!numero.value | (numero.value < 0)) {
+              return alert("Ingrese un numero natural positivo");
+            }
+
+            for (var i = 2; i < number; i++) {
+              fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+            }
+            return fibonacci;
+          }
+
+          var render = GenerateFibonacci(parseInt(numero.value));
+
+          renderCards(render);
+        } catch (error) {
+          console.log(error);
+        }
+      });
+    };
+  </script>
+</html>

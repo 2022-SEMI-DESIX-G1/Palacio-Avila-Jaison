@@ -1,0 +1,54 @@
+* {
+    font-family: Georgia;
+  }
+  
+  #resultado {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(91, 91, 91, 0.89);
+    color: aliceblue;
+    min-width: 30px;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  p:hover {
+    cursor: pointer;
+    font-size: 120%;
+    background: rgba(54, 54, 54, 0.89);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  #lab4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 15px;
+    padding: 50px;
+  }
+  
+  #formulario {
+    padding: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+  }
+  

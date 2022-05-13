@@ -1,0 +1,274 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+body{
+
+    background: #031926;
+
+}
+
+.cleanSearch{
+    background: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    min-width: 500px;
+}
+
+.template{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+
+}
+
+#pokemon-finder-form{
+    display: flex;
+}
+
+#pokemon-finder-response{
+    min-width: 500px;
+}
+
+.form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 30px 45px;
+    border: 1px solid black;
+    border-radius: 6px;
+    min-width: 500px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form img{
+    position: absolute;
+    top: -67px;
+    left: 160px;
+}
+
+.card-pokemon{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 40px 45px;
+    border: 1px solid black;
+    border-radius: 6px;
+    min-width: 500px;
+}
+.card-ability{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-right: 500px;
+    padding: 35px 40px 20px 45px;
+    border: 1px solid black;
+    border-radius: 6px;
+    min-width: 500px;
+}
+
+.ability-info{
+    margin-right: 50px;
+}
+
+form{
+    display: flex;
+    height: 100%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+
+.first-elemet-response{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.second-elemet-response{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-general{
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+}
+
+.info-general p{
+    margin: 0px;
+}
+
+.info-sprites{
+    display: flex;
+    flex-direction: column;
+}
+
+.sprites{
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.sprites img{
+    width: 60;
+    height: 60px;
+    position: relative;
+}
+
+.sprite-two{
+    position: absolute;
+    left: -10px;
+}
+
+.description{
+    margin: 0px;
+    font-weight: bold;
+}
+
+label{
+    margin-bottom: 2px;
+}
+
+select{
+    height: 50%;
+    border:none;
+    background: rgb(236, 236, 236);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+h1{
+    margin: 0px;
+    margin-bottom: 8px;
+}
+h5{
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+p{
+    margin: 0px;
+}
+input[type=text]{
+    border:none;
+    background: rgb(236, 236, 236);
+    border-radius: 4px;
+    padding: 6px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    margin-left: 50px;
+}
+button{
+    width: 90px;
+    margin-top: 20px;
+    background: rgba(0, 140, 255, 0.911);
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    color: white;
+    text-decoration:dashed;
+}
+
+#buscar{
+    align-self: end; 
+    margin-right: 20px;
+}
+
+@media (max-width: 650px) {
+    
+    #pokemon-finder-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pokemon-finder-response{
+        min-width: 100%;
+    }
+
+    .form{
+        padding: 35px ;
+        min-width: 70%;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .form img{
+        position: absolute;
+        top: -67px;
+        left: 50px;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    button{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .card-pokemon{
+        padding: 35px ;
+        min-width: 70%;
+        position: relative;
+        margin-bottom: 25px;
+        align-items: center;
+    }
+
+    .card-ability{
+        padding: 35px ;
+        min-width: 70%;
+        position: relative;
+        margin-bottom: 25px;
+        align-items: center;
+        padding: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .ability-info{
+        margin-right: 30px;
+    }
+    
+    .info-general{
+        margin-right: 0px;
+    }
+
+    .ability-info {
+        display: flex;
+        margin-right: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cleanSearch{
+        padding: 35px ;
+        min-width: 70%;
+        margin-bottom: 25px;
+        align-items: center;
+        padding-top: 40px;
+    }
+    #buscar{
+        align-self: end; 
+        margin-right: 0px;
+    }
+}

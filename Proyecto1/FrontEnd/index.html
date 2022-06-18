@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PokeApi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="template">
+      <section class="form">
+        <img
+          alt="PokéAPI"
+          src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
+        />
+        <h1>pokemon finder</h1>
+        <h5>Search all the forests that are in our api</h5>
+
+        <form name="miFormulario" id="pokemon-finder-form">
+          <div class="input">
+            <label for="">Search</label>
+            <input id="pokemon-finder-query" class="input" type="text" />
+          </div>
+          <div class="checkbox">
+            <div>
+              <label for="">Sprites</label>
+              <input type="checkbox" name="sprites" />
+            </div>
+            <div>
+              <label for="">Ubicacion</label>
+              <input type="checkbox" name="encounters" />
+            </div>
+            <div>
+              <label for="">Cadena de evolucion</label>
+              <input type="checkbox" name="evolutions" />
+            </div>
+          </div>
+          <button type="submit" id="buscar">Buscar</button>
+        </form>
+      </section>
+
+      <section id="pokemon-finder-response" class="response"></section>
+      <script src="utils.js"></script>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>

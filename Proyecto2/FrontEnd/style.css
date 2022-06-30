@@ -1,0 +1,344 @@
+* {
+  font-family: "Gantari", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.cleanSearch {
+  background: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 20px;
+  min-width: 500px;
+}
+
+.template {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+#pokemon-finder-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#pokemon-finder-response {
+  min-width: 500px;
+}
+
+.general {
+  background: rgb(255, 254, 254);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 40px 30px 45px;
+  border-radius: 6px;
+  min-width: 600px;
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.form img {
+  position: absolute;
+  top: -67px;
+  left: 200px;
+}
+
+.card-pokemon {
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 35px 40px 40px 45px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 6px;
+  min-width: 600px;
+  margin-bottom: 20px;
+}
+.card-pokemon img{
+  border: 2px black;
+  width: 200px;
+  height: 200px;
+  border-radius: 1px black 20px;
+
+}
+
+.encounters{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 35px 40px 20px 45px;
+  border-radius: 6px;
+  min-width: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding-left: 60px;
+}
+.card-encounters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.ability-info {
+  margin-right: 50px;
+}
+
+form {
+  display: flex;
+  height: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sprites {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 35px 40px 20px 45px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 6px;
+    min-width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.sprites-all{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sprites img {
+  width: 120px;
+  height: 120px;
+}
+
+.evolutions{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 35px 40px 20px 45px;
+    border-radius: 6px;
+    min-width: 500px;
+    margin-bottom: 20px;
+}
+
+.evolutions h1{
+  text-align: center;
+}
+.checkbox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 2px;
+}
+
+select {
+  height: 50%;
+  border: none;
+  background: rgb(236, 236, 236);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+h1 {
+  margin: 0px;
+  margin-bottom: 8px;
+}
+h5 {
+  margin: 0px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+p {
+  margin: 0px;
+}
+input[type="text"] {
+  border: none;
+  background: rgb(236, 236, 236);
+  border-radius: 4px;
+  padding: 6px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  margin-left: 50px;
+}
+button {
+  width: 90px;
+  margin-top: 20px;
+  background: rgba(0, 140, 255, 0.911);
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  color: white;
+  text-decoration: dashed;
+}
+
+#buscar {
+  align-self: end;
+  margin-right: 20px;
+}
+.cart {
+  display: flex;
+  height: 120px;
+  width: 90%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 5px black;
+  margin: 10px;
+}
+.cart:hover {
+  transform: rotateY(180deg);
+}
+
+.lado {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+  backface-visibility: hidden;
+}
+.frente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 80, 220);
+}
+
+.atras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 650px) {
+  #pokemon-finder-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pokemon-finder-response {
+    min-width: 100%;
+  }
+
+  .form {
+    padding: 35px;
+    min-width: 70%;
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .form img {
+    position: absolute;
+    top: -67px;
+    left: 50px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .card-pokemon {
+    padding: 35px;
+    min-width: 70%;
+    position: relative;
+    margin-bottom: 25px;
+    align-items: center;
+  }
+
+  .card-encounters {
+    display: flex;
+    padding: 35px;
+    min-width: 70%;
+    position: relative;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .ability-info {
+    margin-right: 30px;
+  }
+
+  .info-general {
+    margin-right: 0px;
+  }
+
+  .ability-info {
+    display: flex;
+    margin-right: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cleanSearch {
+    padding: 35px;
+    min-width: 70%;
+    margin-bottom: 25px;
+    align-items: center;
+    padding-top: 40px;
+  }
+  #buscar {
+    align-self: end;
+    margin-right: 0px;
+  }
+}
